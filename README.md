@@ -45,7 +45,7 @@ The project automatically generates charts saved in the `images/` folder:
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Instalation
 
 1. Clone the repository:
 
@@ -56,7 +56,23 @@ git clone https://github.com/yourusername/movie-data-explorer.git
 ```bash
 pip install -r requirements.txt
 ```
-3. Run the program:
+
+## 🔑API Configuration
+
+This project uses the TMDb API and OMD API to retrieve movie data.
+
+Create a .env file in the project root:
+```bash
+API_KEY_OMD = "your_api"
+API_KEY_TMDB = "your_api"
+```
+Get your API key from the TMDb and OMD website.
+
+**⚠️ The .env file is ignored by Git to keep your API key private.**
+
+## ▶️ Running the Project
+
+Run the main script:
 ```bash
 python main.py
 ```
