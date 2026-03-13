@@ -1,9 +1,13 @@
 import requests
 import pandas as pd
 from analysis import plot_genre_charts, plot_movie_ratings
-API_KEY_OMD = "1da87ae7"
-API_KEY_TMDB = "9dfff90a5114b7610730903fa4dadc76"
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+API_KEY_TMDB = os.getenv("API_KEY_TMDB")
+API_KEY_OMD = os.getenv("API_KEY_OMD")
 genres = {
     "action": 28,
     "comedy": 35,
